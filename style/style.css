@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Zen Old Mincho', serif;
-    background-color:var(--Chinese-Black) ;
+    background-color:var(--Halloween-Orange) ;
     
 }
 .container {
@@ -26,9 +26,16 @@ header::after {
   display: table;
   clear: both;
 }
+.tekst{
+  font-size: 19px;
+  text-align: center;
+}
+.main{
+  text-align: center;
+}
 
 nav {
-  float: right;
+  float: center;
 }
 
 nav ul {
@@ -45,26 +52,24 @@ nav li {
 }
 
 nav a {
-  color: #444;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 nav a:hover {
-  color: #000;
+  color: rgb(245, 243, 243);
 }
 
 nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #444;
-
+  background-color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   width: 0%;
-
   transition: all ease-in-out 250ms;
 }
 
@@ -72,5 +77,56 @@ nav a:hover::before {
   width: 100%;
 }
 
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 1rem;
+}
 
+.gallery div {
+  height: 100%;
+  width: 100%;
+}
 
+.gallery img {
+  width: 100%;
+}
+
+.image1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+.bottom-link{
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+  
+  }
+  .lil-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .lil-wrapper i{
+  margin-right: 1rem;
+  
+  }
+  .lil-wrapper a{
+  text-decoration: none;
+  color: var(--text);
+  
+  }
+  .footer{
+    text-align: center;
+     padding: 2rem;
+  
+      
+  }
+  li:hover{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+  }

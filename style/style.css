@@ -18,7 +18,7 @@ body{
 }
 
 header {
-  background: var(--Metallic-Yellow);
+  background: var(--Rebecca-Purple);
 }
 
 header::after {
@@ -26,14 +26,27 @@ header::after {
   display: table;
   clear: both;
 }
-.tekst{
-  font-size: 19px;
-  text-align: center;
-}
+
 .main{
   text-align: center;
+  font-size: 2rem;
 }
+.teenused h3{
+  text-transform: uppercase;
+  text-align: center;
+}
+.service-image{
+  width: 60%;
+  margin: 0 auto;
+  height: 40vh;
+  overflow: hidden;
 
+}
+img{
+  width: 100%;
+  object-fit: cover;
+
+}
 nav {
   float: center;
 }
@@ -52,10 +65,11 @@ nav li {
 }
 
 nav a {
-  color: rgb(0, 0, 0);
+  color: var(--Halloween-Orange);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -84,20 +98,20 @@ nav a:hover::before {
   padding-top: 1rem;
 }
 
-.gallery div {
+.service div {
   height: 100%;
   width: 100%;
 }
 
-.gallery img {
-  width: 100%;
+.description{
+  text-align: center;
 }
 
-.image1 {
+/* image1 {
   grid-column-start: 1;
   grid-column-end: 3;
 
-}
+} */
 
 .bottom-link{
   display: inline-block;
@@ -129,4 +143,7 @@ nav a:hover::before {
     color: whitesmoke;
     letter-spacing: 1px;
     transition: all 0.4s ease 0s;
+  }
+  p{
+    font-size: larger;
   }
